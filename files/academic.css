@@ -314,6 +314,56 @@ main {
   margin-bottom: 2.2rem;
 }
 
+.policy-section {
+  padding-top: clamp(2rem, 5vw, 4rem);
+}
+
+.fit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.fit-card {
+  min-height: 255px;
+  padding: 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--paper-shadow);
+}
+
+.fit-card h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+}
+
+.fit-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.signal-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.signal-row span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--chip);
+  color: var(--ink);
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
 .paper-group {
   margin-top: 2.4rem;
 }
@@ -536,6 +586,10 @@ main {
   }
 
   .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fit-grid {
     grid-template-columns: 1fr;
   }
 }
