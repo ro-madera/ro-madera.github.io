@@ -3,7 +3,8 @@
   var button = document.querySelector(".theme-toggle");
   var label = document.querySelector(".theme-toggle-label");
   var icon = document.querySelector(".theme-toggle-icon");
-  var modes = ["system", "light", "dark"];
+  var fallbackTheme = "system";
+  var modes = ["light", "dark", "system"];
   var labels = {
     system: "Auto",
     light: "Light",
@@ -15,8 +16,26 @@
     dark: "☾"
   };
 
+  function getSavedTheme() {
+    try {
+      return localStorage.getItem("theme") || fallbackTheme;
+    } catch (error) {
+      return fallbackTheme;
+    }
+  }
+
+  function saveTheme(mode) {
+    fallbackTheme = mode;
+    try {
+      localStorage.setItem("theme", mode);
+    } catch (error) {
+      return false;
+    }
+    return true;
+  }
+
   function currentMode() {
-    var saved = localStorage.getItem("theme");
+    var saved = getSavedTheme();
     return modes.indexOf(saved) === -1 ? "system" : saved;
   }
 
@@ -33,7 +52,7 @@
     button.addEventListener("click", function () {
       var mode = currentMode();
       var nextMode = modes[(modes.indexOf(mode) + 1) % modes.length];
-      localStorage.setItem("theme", nextMode);
+      saveTheme(nextMode);
       applyMode(nextMode);
     });
   }

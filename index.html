@@ -7,7 +7,13 @@
   <meta name="color-scheme" content="light dark">
   <title>Rocio Madera</title>
   <script>
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "system";
+    (function () {
+      try {
+        document.documentElement.dataset.theme = localStorage.getItem("theme") || "system";
+      } catch (error) {
+        document.documentElement.dataset.theme = "system";
+      }
+    })();
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
