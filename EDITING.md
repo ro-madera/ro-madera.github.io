@@ -28,6 +28,24 @@ Put new PDFs in `papers/` and link to them like this:
 <a href="papers/example.pdf">PDF</a>
 ```
 
+## Edit the Project Map
+
+The section aimed at policy, finance, and tech research teams starts at:
+
+```html
+<section id="policy" class="section policy-section">
+```
+
+Edit the project cards by changing the text inside each `<article class="project-card">`.
+
+The graph next to the projects is an inline SVG inside:
+
+```html
+<aside class="research-map">
+```
+
+For simple edits, change the text inside the `<text>` elements. For example, replace `AI-assisted` or `platform data` with a different label.
+
 ## Edit Colors
 
 Open `files/academic.css`. The main light theme colors are at the top under `:root`.

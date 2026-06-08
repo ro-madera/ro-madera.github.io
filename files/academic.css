@@ -15,6 +15,10 @@
   --chip: #f0f3ec;
   --tag-bg: #f3eee5;
   --tag-ink: #60440e;
+  --map-bg: #f3f6ef;
+  --map-line: #bdc9bf;
+  --map-node: #ffffff;
+  --map-node-primary: #eef4ed;
   --header-bg: rgba(247, 248, 244, 0.92);
   --portrait-bg: #eceee8;
   --shadow: 0 18px 45px rgba(30, 39, 33, 0.08);
@@ -39,6 +43,10 @@
     --chip: #223128;
     --tag-bg: #342b1e;
     --tag-ink: #edcf80;
+    --map-bg: #141a17;
+    --map-line: #3b493f;
+    --map-node: #1d2520;
+    --map-node-primary: #223228;
     --header-bg: rgba(17, 21, 19, 0.9);
     --portrait-bg: #242b27;
     --shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
@@ -63,6 +71,10 @@
   --chip: #223128;
   --tag-bg: #342b1e;
   --tag-ink: #edcf80;
+  --map-bg: #141a17;
+  --map-line: #3b493f;
+  --map-node: #1d2520;
+  --map-node-primary: #223228;
   --header-bg: rgba(17, 21, 19, 0.9);
   --portrait-bg: #242b27;
   --shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
@@ -318,29 +330,132 @@ main {
   padding-top: clamp(2rem, 5vw, 4rem);
 }
 
-.fit-grid {
+.project-board {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.78fr);
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: start;
 }
 
-.fit-card {
-  min-height: 255px;
-  padding: 1.25rem;
+.project-stack {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1rem;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: var(--paper-shadow);
 }
 
-.fit-card h3 {
-  margin: 0 0 0.75rem;
+.project-index {
+  display: grid;
+  place-items: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 6px;
+  background: var(--chip);
+  color: var(--sage);
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.project-card h3,
+.research-map h3 {
+  margin: 0;
   font-size: 1.05rem;
 }
 
-.fit-card p {
-  margin: 0;
+.project-card p,
+.research-map p {
+  margin: 0.35rem 0 0;
   color: var(--muted);
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.7rem;
+}
+
+.project-tags span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.75rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface-soft);
+  color: var(--intro);
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.research-map {
+  position: sticky;
+  top: 5.5rem;
+  padding: 1rem;
+  background: var(--map-bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--paper-shadow);
+}
+
+.map-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: start;
+  margin-bottom: 0.8rem;
+}
+
+.map-header p {
+  max-width: 15rem;
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+.map-graphic {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+}
+
+.map-links line {
+  stroke: var(--map-line);
+  stroke-width: 2;
+}
+
+.map-node circle {
+  fill: var(--map-node);
+  stroke: var(--line);
+  stroke-width: 2;
+}
+
+.map-node-primary circle {
+  fill: var(--map-node-primary);
+  stroke: var(--sage);
+}
+
+.map-node text {
+  fill: var(--ink);
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  text-anchor: middle;
+}
+
+.map-node-small text {
+  font-size: 13px;
 }
 
 .signal-row {
@@ -589,8 +704,12 @@ main {
     grid-template-columns: 1fr;
   }
 
-  .fit-grid {
+  .project-board {
     grid-template-columns: 1fr;
+  }
+
+  .research-map {
+    position: static;
   }
 }
 
