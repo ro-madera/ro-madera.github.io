@@ -1,7 +1,10 @@
 :root {
+  color-scheme: light;
   --bg: #f7f8f4;
   --surface: #ffffff;
+  --surface-soft: #fbfcf8;
   --ink: #17201b;
+  --intro: #344039;
   --muted: #69716b;
   --line: #dde3dc;
   --accent: #9c2f2f;
@@ -9,7 +12,65 @@
   --sage: #3e6656;
   --gold: #b58a2a;
   --code: #17201b;
+  --chip: #f0f3ec;
+  --tag-bg: #f3eee5;
+  --tag-ink: #60440e;
+  --header-bg: rgba(247, 248, 244, 0.92);
+  --portrait-bg: #eceee8;
   --shadow: 0 18px 45px rgba(30, 39, 33, 0.08);
+  --paper-shadow: 0 8px 24px rgba(30, 39, 33, 0.05);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #111513;
+    --surface: #181e1b;
+    --surface-soft: #202822;
+    --ink: #edf2ec;
+    --intro: #d5ddd4;
+    --muted: #a7b2a8;
+    --line: #303a33;
+    --accent: #e27a72;
+    --accent-dark: #f0a39d;
+    --sage: #92c5a8;
+    --gold: #dfc170;
+    --code: #0d100f;
+    --chip: #223128;
+    --tag-bg: #342b1e;
+    --tag-ink: #edcf80;
+    --header-bg: rgba(17, 21, 19, 0.9);
+    --portrait-bg: #242b27;
+    --shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+    --paper-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #111513;
+  --surface: #181e1b;
+  --surface-soft: #202822;
+  --ink: #edf2ec;
+  --intro: #d5ddd4;
+  --muted: #a7b2a8;
+  --line: #303a33;
+  --accent: #e27a72;
+  --accent-dark: #f0a39d;
+  --sage: #92c5a8;
+  --gold: #dfc170;
+  --code: #0d100f;
+  --chip: #223128;
+  --tag-bg: #342b1e;
+  --tag-ink: #edcf80;
+  --header-bg: rgba(17, 21, 19, 0.9);
+  --portrait-bg: #242b27;
+  --shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+  --paper-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
 }
 
 * {
@@ -61,7 +122,7 @@ a:hover {
   justify-content: space-between;
   gap: 2rem;
   padding: 1rem clamp(1rem, 4vw, 3rem);
-  background: rgba(247, 248, 244, 0.92);
+  background: var(--header-bg);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(14px);
 }
@@ -83,6 +144,35 @@ a:hover {
 
 .nav a {
   color: var(--ink);
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.55rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent-dark);
+}
+
+.theme-toggle-icon {
+  min-width: 1rem;
+  font-size: 0.95rem;
+  line-height: 1;
+  text-align: center;
 }
 
 main {
@@ -116,7 +206,7 @@ main {
   object-position: center top;
   border-radius: 6px;
   margin-bottom: 1.2rem;
-  background: #eceee8;
+  background: var(--portrait-bg);
 }
 
 .profile-panel h1 {
@@ -160,7 +250,7 @@ main {
   padding: 0.35rem 0.65rem;
   border: 1px solid var(--line);
   border-radius: 6px;
-  background: #fbfcf8;
+  background: var(--surface-soft);
   color: var(--ink);
   font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.78rem;
@@ -199,7 +289,7 @@ main {
 
 .intro p {
   max-width: 760px;
-  color: #344039;
+  color: var(--intro);
   font-size: clamp(1rem, 1.5vw, 1.15rem);
 }
 
@@ -208,7 +298,7 @@ main {
 }
 
 .quick-facts span {
-  background: #f0f3ec;
+  background: var(--chip);
 }
 
 .section {
@@ -245,7 +335,7 @@ main {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
-  box-shadow: 0 8px 24px rgba(30, 39, 33, 0.05);
+  box-shadow: var(--paper-shadow);
 }
 
 .paper.compact {
@@ -269,7 +359,7 @@ main {
 }
 
 .abstract {
-  color: #354139;
+  color: var(--intro);
 }
 
 .paper-links {
@@ -281,8 +371,8 @@ main {
   justify-self: end;
   padding: 0.4rem 0.6rem;
   border-radius: 6px;
-  background: #f3eee5;
-  color: #60440e;
+  background: var(--tag-bg);
+  color: var(--tag-ink);
   font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.72rem;
   font-weight: 800;

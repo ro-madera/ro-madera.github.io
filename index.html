@@ -4,7 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Rocio Madera, Assistant Professor of Economics at Southern Methodist University. Research in macroeconomics, labor economics, income risk, consumption, and welfare.">
+  <meta name="color-scheme" content="light dark">
   <title>Rocio Madera</title>
+  <script>
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "system";
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
@@ -20,6 +24,10 @@
       <a href="#computing">Computing</a>
       <a href="#teaching">Teaching</a>
       <a href="papers/madera_cv.pdf">CV</a>
+      <button class="theme-toggle" type="button" aria-label="Switch color theme" aria-live="polite">
+        <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+        <span class="theme-toggle-label">Auto</span>
+      </button>
     </nav>
   </header>
 
@@ -264,5 +272,6 @@
     <p>© 2026 Rocio Madera</p>
     <a href="mailto:romadera@smu.edu">romadera@smu.edu</a>
   </footer>
+  <script src="files/theme-toggle.js"></script>
 </body>
 </html>
