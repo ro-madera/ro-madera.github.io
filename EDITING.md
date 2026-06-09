@@ -19,8 +19,8 @@ Copy one existing `<article class="paper"> ... </article>` block inside the rele
 - the paper title inside `<h4>`
 - the coauthors and journal/status in `<p class="authors">`
 - the short description in `<p class="abstract">`
+- tags inside `<div class="paper-topics">`
 - links inside `<div class="paper-links">`
-- the right-side label inside `<div class="paper-tag">`, if the paper uses one
 
 Put new PDFs in `papers/` and link to them like this:
 
@@ -28,23 +28,19 @@ Put new PDFs in `papers/` and link to them like this:
 <a href="papers/example.pdf">PDF</a>
 ```
 
-## Edit the Project Map
+## Edit Paper Tags
 
-The section aimed at policy, finance, and tech research teams starts at:
-
-```html
-<section id="policy" class="section policy-section">
-```
-
-Edit the project cards by changing the text inside each `<article class="project-card">`.
-
-The graph next to the projects is an inline SVG inside:
+Paper tags are small labels inside each paper card:
 
 ```html
-<aside class="research-map">
+<div class="paper-topics" aria-label="Paper topics">
+  <span>income risk</span>
+  <span>consumption</span>
+  <span>welfare</span>
+</div>
 ```
 
-For simple edits, change the text inside the `<text>` elements. For example, replace `AI-assisted` or `platform data` with a different label.
+Add, remove, or rename the `<span>` tags to change how a paper is categorized.
 
 ## Edit Colors
 
