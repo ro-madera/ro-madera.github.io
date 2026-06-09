@@ -12,6 +12,16 @@ This is a plain static website. The main files are:
 
 Open `index.html` in a text editor. Search for the exact sentence or paper title you want to change, edit it, then save.
 
+## Edit the Profile Image
+
+The homepage portrait is near the top of `index.html`:
+
+```html
+<img class="portrait" src="uploads/rocio-madera-profile.jpg" alt="Rocio Madera">
+```
+
+Put a replacement image in this folder or in `uploads/`, then change the `src` value.
+
 ## Add a Paper
 
 Copy one existing `<article class="paper"> ... </article>` block inside the relevant section and edit:

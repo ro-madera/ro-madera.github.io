@@ -201,11 +201,12 @@ main {
 .portrait {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
   object-position: center top;
-  border-radius: 6px;
-  margin-bottom: 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin: 0 auto 1.2rem;
   background: var(--portrait-bg);
 }
 
