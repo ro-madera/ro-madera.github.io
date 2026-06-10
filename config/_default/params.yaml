@@ -37,12 +37,14 @@ hugoblox:
     pack: "default"
     # Optional: Override theme pack colors
     colors:
-      primary: "indigo" # Tailwind palette name or hex (e.g., "indigo" or "#6366f1")
+      primary: "blue" # Tailwind palette name or hex (e.g., "indigo" or "#6366f1")
       secondary: ""
       neutral: "" # Affects gray utilities (text-gray-*, bg-gray-*)
     # Optional: Mode-specific color overrides
-    colors_light: {}
-    colors_dark: {}
+    colors_light:
+      primary: "#1e3a8a" # Navy blue for light mode
+    colors_dark:
+      primary: "#60a5fa" # Lighter blue-400 for readability in dark mode
     # Optional: Semantic surface color overrides
     surfaces:
       background: ""
