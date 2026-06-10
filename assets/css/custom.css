@@ -14,11 +14,67 @@ nav, .navbar-brand, button, input, textarea, select {
   font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif !important;
 }
 
-/* Left-align section titles (like floswald.github.io) */
+/* Left-align section title text */
 .hbb-section:not(#bio) h1,
 .hbb-section:not(#bio) h2,
-.hbb-section:not(#bio) .section-heading {
+.hbb-section:not(#bio) [class*="text-3xl"] {
   text-align: left !important;
+}
+
+/* =============================================================
+   Two-column layout: title on left, content on right
+   (inspired by floswald.github.io)
+   ============================================================= */
+
+@media (min-width: 900px) {
+  /* --- Collection blocks (Publications, Working Papers) ---
+     3 children: bg (absolute) + title div + content div */
+  .hbb-section:not(#bio):has(> div:nth-child(3)) {
+    display: grid !important;
+    grid-template-columns: 210px 1fr !important;
+    column-gap: 4rem !important;
+    padding-left: max(2rem, calc((100% - 1060px) / 2)) !important;
+    padding-right: max(2rem, calc((100% - 1060px) / 2)) !important;
+    align-items: start !important;
+  }
+  /* Title column: undo centering */
+  .hbb-section:not(#bio):has(> div:nth-child(3)) > div:nth-child(2) {
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  /* Content column: undo centering */
+  .hbb-section:not(#bio):has(> div:nth-child(3)) > div:nth-child(3) {
+    align-items: flex-start !important;
+    padding: 0 !important;
+  }
+  /* Remove inner container centering + top margin */
+  .hbb-section:not(#bio):has(> div:nth-child(3)) > div:nth-child(3) > div:first-child {
+    max-width: none !important;
+    width: 100% !important;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* --- Markdown blocks (WIP, Computing, Teaching) ---
+     2 children: bg (absolute) + one div containing title + prose */
+  .hbb-section:not(#bio):not(:has(> div:nth-child(3))) > div:nth-child(2) {
+    display: grid !important;
+    grid-template-columns: 210px 1fr !important;
+    column-gap: 4rem !important;
+    max-width: 1060px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    align-items: start !important;
+    flex-direction: unset !important;
+    gap: unset !important;
+    justify-content: unset !important;
+  }
 }
 
 /* Alternating section backgrounds */
@@ -39,9 +95,9 @@ nav, .navbar-brand, button, input, textarea, select {
   padding-bottom: 3rem;
 }
 
-#focus.hbb-section,
-#research.hbb-section,
-#all-research.hbb-section,
+#publications.hbb-section,
+#working-papers.hbb-section,
+#wip.hbb-section,
 #computing.hbb-section,
 #teaching.hbb-section {
   padding-top: 3.5rem;
