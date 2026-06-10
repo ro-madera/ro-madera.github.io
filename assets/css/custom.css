@@ -275,19 +275,18 @@ nav, .navbar-brand, button, input, textarea, select {
 .pub-list-item .li-cite-author a { color: inherit !important; text-decoration: none !important; }
 .dark .pub-list-item .li-cite-author { color: #9ca3af !important; }
 
-/* Journal + date: journal/status bold link-blue, date normal */
+/* Journal + date: journal/status bold white, date normal */
 .pub-list-item .pub-journal {
   display: block !important;
   font-size: 0.8rem !important;
   color: #4b5563 !important;
 }
 .pub-list-item .pub-journal-name {
-  color: var(--color-primary-600) !important;
+  color: #ffffff !important;
   font-weight: 700 !important;
 }
 .pub-list-item .pub-journal-name em { font-weight: 700 !important; font-style: italic !important; }
 .dark .pub-list-item .pub-journal { color: #9ca3af !important; }
-.dark .pub-list-item .pub-journal-name { color: var(--color-primary-400) !important; }
 
 /* Working paper date (no journal) */
 .pub-list-item .li-year {

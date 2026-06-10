@@ -27,12 +27,6 @@ links:
     url: https://doi.org/10.1093/epolic/eiz010
   - type: code
     url: https://github.com/ro-madera/CGMV_prestamos
-  - type: custom
-    label: VoxEU
-    url: https://voxeu.org/article/income-contingent-university-loans
-  - type: custom
-    label: NeG
-    url: http://nadaesgratis.es/cabrales/prestamos-universitarios-contingentes-a-la-renta-diseno-y-aplicacion-a-espana
 projects: []
 slides: ""
 ---
