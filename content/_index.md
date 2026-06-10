@@ -10,7 +10,7 @@ sections:
     content:
       username: me
       text: |
-        I am an Assistant Professor of Economics at Southern Methodist University and a CESifo Research Network affiliate. I study how income risk, labor-market frictions, and household decisions shape consumption, welfare, and the design of public policy.
+        I am an Assistant Professor of Economics at Southern Methodist University and a CESifo Research Network affiliate. I study how income uncertainty, labor-market frictions, and local economic conditions shape household consumption and family decisions, welfare, and the design of public policy.
       headings:
         about: ''
         education: Education
