@@ -60,18 +60,9 @@ sections:
   - block: markdown
     id: wip
     content:
-      title: Work in Progress
+      title: Ongoing Projects
       text: |-
         1. Project title (in preparation)
-        2. Project title (in preparation)
-        3. Project title (in preparation)
-        4. Project title (in preparation)
-        5. Project title (in preparation)
-        6. Project title (in preparation)
-        7. Project title (in preparation)
-        8. Project title (in preparation)
-        9. Project title (in preparation)
-        10. Project title (in preparation)
     design:
       columns: '1'
 
@@ -80,14 +71,14 @@ sections:
     content:
       title: Skills
       text: |
-        <div class="skills-bars">
-          <div class="skill-row"><span class="skill-name">Stata</span><div class="skill-track"><div class="skill-fill" style="width:100%"></div></div><span class="skill-pct">100%</span></div>
-          <div class="skill-row"><span class="skill-name">Matlab</span><div class="skill-track"><div class="skill-fill" style="width:100%"></div></div><span class="skill-pct">100%</span></div>
-          <div class="skill-row"><span class="skill-name">R</span><div class="skill-track"><div class="skill-fill" style="width:100%"></div></div><span class="skill-pct">100%</span></div>
-          <div class="skill-row"><span class="skill-name">Econometrics</span><div class="skill-track"><div class="skill-fill" style="width:100%"></div></div><span class="skill-pct">100%</span></div>
-          <div class="skill-row"><span class="skill-name">Fortran</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div><span class="skill-pct">80%</span></div>
-          <div class="skill-row"><span class="skill-name">Julia</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div><span class="skill-pct">80%</span></div>
-          <div class="skill-row"><span class="skill-name">Python</span><div class="skill-track"><div class="skill-fill" style="width:50%"></div></div><span class="skill-pct">50%</span></div>
+        <div class="skills-grid">
+          <div class="skill-item"><svg viewBox="0 0 70 70" class="skill-ring"><circle cx="35" cy="35" r="28" fill="none" stroke-width="6" class="ring-bg"/><circle cx="35" cy="35" r="28" fill="none" stroke-width="6" stroke-dasharray="175.93" stroke-dashoffset="0" stroke-linecap="round" transform="rotate(-90 35 35)" class="ring-fill"/><text x="35" y="40" text-anchor="middle" font-size="13" font-weight="600" class="ring-text">100%</text></svg><div class="skill-label">Stata</div></div>
+          <div class="skill-item"><svg viewBox="0 0 70 70" class="skill-ring"><circle cx="35" cy="35" r="28" fill="none" stroke-width="6" class="ring-bg"/><circle cx="35" cy="35" r="28" fill="none" stroke-width="6" stroke-dasharray="175.93" stroke-dashoffset="0" stroke-linecap="round" transform="rotate(-90 35 35)" class="ring-fill"/><text x="35" y="40" text-anchor="middle" font-size="13" font-weight="600" class="ring-text">100%</text></svg><div class="skill-label">Matlab</div></div>
+          <div class="skill-item"><svg viewBox="0 0 70 70" class="skill-ring"><circle cx="35" cy="35" r="28" fill="none" stroke-width="6" class="ring-bg"/><circle cx="35" cy="35" r="28" fill="none" stroke-width="6" stroke-dasharray="175.93" stroke-dashoffset="0" stroke-linecap="round" transform="rotate(-90 35 35)" class="ring-fill"/><text x="35" y="40" text-anchor="middle" font-size="13" font-weight="600" class="ring-text">100%</text></svg><div class="skill-label">R</div></div>
+          <div class="skill-item"><svg viewBox="0 0 70 70" class="skill-ring"><circle cx="35" cy="35" r="28" fill="none" stroke-width="6" class="ring-bg"/><circle cx="35" cy="35" r="28" fill="none" stroke-width="6" stroke-dasharray="175.93" stroke-dashoffset="0" stroke-linecap="round" transform="rotate(-90 35 35)" class="ring-fill"/><text x="35" y="40" text-anchor="middle" font-size="13" font-weight="600" class="ring-text">100%</text></svg><div class="skill-label">Econometrics</div></div>
+          <div class="skill-item"><svg viewBox="0 0 70 70" class="skill-ring"><circle cx="35" cy="35" r="28" fill="none" stroke-width="6" class="ring-bg"/><circle cx="35" cy="35" r="28" fill="none" stroke-width="6" stroke-dasharray="175.93" stroke-dashoffset="0" stroke-linecap="round" transform="rotate(-90 35 35)" class="ring-fill"/><text x="35" y="40" text-anchor="middle" font-size="13" font-weight="600" class="ring-text">100%</text></svg><div class="skill-label">Fortran</div></div>
+          <div class="skill-item"><svg viewBox="0 0 70 70" class="skill-ring"><circle cx="35" cy="35" r="28" fill="none" stroke-width="6" class="ring-bg"/><circle cx="35" cy="35" r="28" fill="none" stroke-width="6" stroke-dasharray="175.93" stroke-dashoffset="35.19" stroke-linecap="round" transform="rotate(-90 35 35)" class="ring-fill"/><text x="35" y="40" text-anchor="middle" font-size="13" font-weight="600" class="ring-text">80%</text></svg><div class="skill-label">Julia</div></div>
+          <div class="skill-item"><svg viewBox="0 0 70 70" class="skill-ring"><circle cx="35" cy="35" r="28" fill="none" stroke-width="6" class="ring-bg"/><circle cx="35" cy="35" r="28" fill="none" stroke-width="6" stroke-dasharray="175.93" stroke-dashoffset="35.19" stroke-linecap="round" transform="rotate(-90 35 35)" class="ring-fill"/><text x="35" y="40" text-anchor="middle" font-size="13" font-weight="600" class="ring-text">80%</text></svg><div class="skill-label">Python</div></div>
         </div>
     design:
       columns: '1'
@@ -99,10 +90,10 @@ sections:
       text: |-
         **Southern Methodist University**
 
-        - Economic Analysis II / Macroeconomics, Master
-        - Topics in Macro with Heterogeneity and Monetary Economics, PhD
         - Intermediate Macroeconomics, Undergraduate
         - Macroeconomic Theory and Policy, Undergraduate
+        - Macroeconomics, Master
+        - Macroeconomics with Heterogeneity and Monetary Economics, PhD
     design:
       columns: '1'
 ---
