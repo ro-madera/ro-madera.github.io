@@ -10,7 +10,7 @@ sections:
     content:
       username: me
       text: |
-        I am an Assistant Professor of Economics at Southern Methodist University and a CESifo Research Network affiliate. I study how income uncertainty, labor-market frictions, and local economic conditions shape heterogeneous household consumption and family decisions, welfare, and the design of public policy.
+        I am an Assistant Professor of Economics at Southern Methodist University and a CESifo Research Network affiliate. I study how income uncertainty, labor-market frictions, and local economic conditions shape heterogeneous household consumption and family decisions, welfare, and the design of public policy. Download my CV [here](/uploads/madera_cv.pdf) to learn more about me and my work.
       headings:
         about: ''
         education: Education
