@@ -23,7 +23,7 @@ links:
   - icon: at-symbol
     url: mailto:romadera@smu.edu
     label: Email
-  - icon: brands/x-twitter
+  - icon: brands/twitter
     url: https://twitter.com/elpuntoderocio
     label: Twitter
   - icon: brands/linkedin
