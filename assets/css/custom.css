@@ -51,8 +51,54 @@ nav, .navbar-brand, button, input, textarea, select {
   letter-spacing: 0.05em;
 }
 
-/* Ensure avatar is circular */
+/* Ensure avatar is circular and larger */
+#bio .avatar-wrapper {
+  width: 270px !important;
+  height: 270px !important;
+}
 #bio .avatar-wrapper img,
 #bio .avatar {
+  width: 270px !important;
+  height: 270px !important;
   border-radius: 50% !important;
+}
+
+/* Education: discrete plain list — no cards, no icons, no shadows */
+#bio .resume-biography .mb-16 .grid {
+  gap: 0.25rem !important;
+  display: block !important;
+}
+#bio .resume-biography .mb-16 .grid .group {
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0.2rem 0 !important;
+  border-radius: 0 !important;
+  backdrop-filter: none !important;
+}
+#bio .resume-biography .mb-16 .grid .group:hover {
+  box-shadow: none !important;
+  border: none !important;
+  transform: none !important;
+}
+#bio .resume-biography .mb-16 .grid .flex-shrink-0 {
+  display: none !important;
+}
+#bio .resume-biography .mb-16 .grid p {
+  font-size: 0.875rem !important;
+  line-height: 1.4 !important;
+}
+#bio .resume-biography .mb-16 .grid p.font-bold {
+  font-weight: 500 !important;
+  color: #374151 !important;
+}
+.dark #bio .resume-biography .mb-16 .grid p.font-bold {
+  color: #d1d5db !important;
+}
+#bio .resume-biography .mb-16 .grid p.text-gray-700 {
+  color: #9ca3af !important;
+}
+.dark #bio .resume-biography .mb-16 .grid p.text-gray-700 {
+  color: #6b7280 !important;
 }
