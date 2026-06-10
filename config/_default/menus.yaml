@@ -7,21 +7,30 @@ main:
   - name: Bio
     url: /
     weight: 10
-  - name: Publications
-    url: /#publications
+  - identifier: research
+    name: Research
     weight: 20
+  - name: Publications
+    parent: research
+    url: /#publications
+    weight: 21
   - name: Working Papers
+    parent: research
     url: /#working-papers
-    weight: 30
+    weight: 22
+  - name: Ongoing Projects
+    parent: research
+    url: /#wip
+    weight: 23
   - name: Policy
     url: /#policy
-    weight: 40
+    weight: 30
   - name: Skills
     url: /#skills
-    weight: 50
+    weight: 40
   - name: Teaching
     url: /#teaching
-    weight: 60
+    weight: 50
   - name: CV
     url: /uploads/madera_cv.pdf
-    weight: 70
+    weight: 60
