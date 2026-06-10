@@ -60,18 +60,6 @@ sections:
       view: citation
 
   - block: collection
-    id: policy
-    content:
-      title: Book Chapters and Policy
-      filters:
-        folders:
-          - publications
-        publication_type: "chapter"
-      count: 0
-    design:
-      view: citation
-
-  - block: collection
     id: wip
     content:
       title: Ongoing Projects
@@ -79,6 +67,18 @@ sections:
         folders:
           - publications
         publication_type: "report"
+      count: 0
+    design:
+      view: citation
+
+  - block: collection
+    id: policy
+    content:
+      title: Book Chapters and Policy
+      filters:
+        folders:
+          - publications
+        publication_type: "chapter"
       count: 0
     design:
       view: citation
