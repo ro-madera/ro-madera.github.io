@@ -11,6 +11,7 @@ publication:
   name: "Nada es Gratis"
 summary: "Entrada en Nada es Gratis sobre el diseño de préstamos universitarios contingentes a la renta y su aplicación al caso español."
 featured: false
+language: "es"
 links:
   - type: custom
     label: NeG

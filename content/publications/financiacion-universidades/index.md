@@ -16,6 +16,7 @@ tags:
   - redistribution
   - Spain
 featured: false
+language: "es"
 peer_reviewed: false
 open_access: true
 links:
