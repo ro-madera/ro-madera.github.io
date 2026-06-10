@@ -85,7 +85,7 @@ nav, .navbar-brand, button, input, textarea, select {
   padding: 0.2rem 0.65rem !important;
 }
 #bio .resume-biography .mb-16 .grid {
-  gap: 0.25rem !important;
+  gap: 0.5rem !important;
   display: block !important;
 }
 #bio .resume-biography .mb-16 .grid .group {
@@ -93,9 +93,23 @@ nav, .navbar-brand, button, input, textarea, select {
   background-image: none !important;
   box-shadow: none !important;
   border: none !important;
-  padding: 0.2rem 0 !important;
+  padding: 0.3rem 0 0.3rem 1.1rem !important;
   border-radius: 0 !important;
   backdrop-filter: none !important;
+  position: relative;
+}
+#bio .resume-biography .mb-16 .grid .group::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-primary-600);
+}
+.dark #bio .resume-biography .mb-16 .grid .group::before {
+  background-color: var(--color-primary-400);
 }
 #bio .resume-biography .mb-16 .grid .group:hover {
   box-shadow: none !important;
@@ -118,6 +132,7 @@ nav, .navbar-brand, button, input, textarea, select {
 }
 #bio .resume-biography .mb-16 .grid p.text-gray-700 {
   color: #9ca3af !important;
+  font-size: 0.8rem !important;
 }
 .dark #bio .resume-biography .mb-16 .grid p.text-gray-700 {
   color: #6b7280 !important;
