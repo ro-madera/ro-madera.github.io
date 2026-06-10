@@ -19,8 +19,8 @@ sections:
       name:
         size: md
       avatar:
-        size: medium
-        shape: rounded
+        size: xl
+        shape: circle
 
   - block: markdown
     id: focus
