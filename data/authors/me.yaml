@@ -1,0 +1,94 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+
+name:
+  display: Rocio Madera
+  given: Rocio
+  family: Madera
+  alternate: ''
+  pronunciation: ''
+  pronouns: ''
+
+role: Assistant Professor of Economics
+
+bio: |
+  I am an Assistant Professor in the Department of Economics at Southern Methodist University and a Research Affiliate of the CESifo Research Network. My research combines rich micro-data with quantitative macroeconomic and labor-market models to study income risk, consumption, policy design, and household welfare.
+
+affiliations:
+  - name: Southern Methodist University
+    url: https://www.smu.edu/
+  - name: CESifo Research Network
+    url: https://www.cesifo.org/
+
+links:
+  - icon: at-symbol
+    url: mailto:romadera@smu.edu
+    label: Email
+  - icon: brands/github
+    url: https://github.com/ro-madera
+    label: GitHub
+  - icon: hero/document-text
+    url: /uploads/madera_cv.pdf
+    label: CV
+
+interests:
+  - Macroeconomics with micro-data
+  - Income dynamics and consumption
+  - Labor markets and self-employment
+  - Policy design and welfare
+  - Family economics
+
+education:
+  - degree: PhD in Economics
+    institution: University of Minnesota
+  - degree: Master in Economics and Finance
+    institution: CEMFI
+  - degree: BA in Economics
+    institution: Universidad Carlos III de Madrid
+
+experience:
+  - role: Assistant Professor of Economics
+    org: Southern Methodist University
+    summary: |
+      Research and teaching in macroeconomics, labor economics, income dynamics, consumption, and policy evaluation.
+  - role: Research Affiliate
+    org: CESifo Research Network
+
+skills:
+  - name: Methods
+    items:
+      - label: Micro-data measurement
+        level: 5
+      - label: Quantitative macro models
+        level: 5
+      - label: Policy counterfactuals
+        level: 5
+      - label: Welfare analysis
+        level: 5
+  - name: Computing
+    items:
+      - label: Stata
+        level: 5
+      - label: Matlab
+        level: 5
+      - label: Fortran
+        level: 4
+      - label: R
+        level: 4
+      - label: Git
+        level: 4
+
+languages:
+  - name: Spanish
+    level: 5
+    label: Native
+  - name: English
+    level: 5
+    label: Fluent
+  - name: French
+    level: 3
+    label: Intermediate
+  - name: Portuguese
+    level: 2
+    label: Conversational

@@ -1,97 +1,70 @@
 # Editing the Website
 
-This is a plain static website. The main files are:
+This website now uses HugoBlox Academic CV. The source is Markdown/YAML, not hand-written HTML.
 
-- `index.html`: page content, sections, paper entries, links, and navigation.
-- `files/academic.css`: visual theme, spacing, layout, light/dark colors, and mobile styles.
-- `files/theme-toggle.js`: light/dark/automatic theme toggle behavior.
-- `papers/`: PDFs and slides linked from the research section.
-- `uploads/`: profile images and older site assets.
+## Main Files
+
+- `content/_index.md`: homepage sections and homepage text.
+- `data/authors/me.yaml`: profile, affiliations, education, interests, skills, and links.
+- `content/publications/*/index.md`: one Markdown file per paper or project.
+- `config/_default/menus.yaml`: top navigation.
+- `config/_default/params.yaml`: theme, dark/light mode, search, footer, and site metadata.
+- `assets/media/authors/me.jpg`: profile photo.
+- `static/uploads/madera_cv.pdf`: CV used by the Download CV button.
+- `static/papers/`: PDFs and slides published by Hugo.
 
 ## Edit Text
 
-Open `index.html` in a text editor. Search for the exact sentence or paper title you want to change, edit it, then save.
+Open the Markdown/YAML file that contains the text you want. For homepage text, edit `content/_index.md`. For the profile, edit `data/authors/me.yaml`.
 
-## Edit the Profile Image
+## Add Or Edit A Paper
 
-The homepage portrait is near the top of `index.html`:
+Each paper is a folder under `content/publications/`. To add a paper, copy an existing folder, rename it, and edit its `index.md`.
 
-```html
-<img class="portrait" src="uploads/rocio-madera-profile.jpg" alt="Rocio Madera">
-```
+Important fields:
 
-Put a replacement image in this folder or in `uploads/`, then change the `src` value.
+- `title`: paper title.
+- `authors`: coauthors.
+- `publication`: journal, book, or working-paper venue.
+- `abstract` and `summary`: short descriptions.
+- `tags`: topic labels shown by HugoBlox.
+- `featured`: set to `true` to show it in Selected Research.
+- `links`: PDF, DOI, code, slides, or external links.
 
-## Add a Paper
+Put new PDFs in `static/papers/` and link to them like `/papers/example.pdf`.
 
-Copy one existing `<article class="paper"> ... </article>` block inside the relevant section and edit:
+## Change The Photo Or CV
 
-- the paper title inside `<h4>`
-- the coauthors and journal/status in `<p class="authors">`
-- the short description in `<p class="abstract">`
-- tags inside `<div class="paper-topics">`
-- links inside `<div class="paper-links">`
+Replace `assets/media/authors/me.jpg` to change the profile photo.
 
-Put new PDFs in `papers/` and link to them like this:
-
-```html
-<a href="papers/example.pdf">PDF</a>
-```
-
-## Edit Paper Tags
-
-Paper tags are small labels inside each paper card:
-
-```html
-<div class="paper-topics" aria-label="Paper topics">
-  <span>income risk</span>
-  <span>consumption</span>
-  <span>welfare</span>
-</div>
-```
-
-Add, remove, or rename the `<span>` tags to change how a paper is categorized.
-
-## Edit Colors
-
-Open `files/academic.css`. The main light theme colors are at the top under `:root`.
-
-The dark theme colors are under:
-
-```css
-@media (prefers-color-scheme: dark) { ... }
-```
-
-and:
-
-```css
-:root[data-theme="dark"] { ... }
-```
-
-Most design changes should be made by editing variables such as `--bg`, `--surface`, `--ink`, `--accent`, and `--sage`.
+Replace `static/uploads/madera_cv.pdf` and `static/uploads/resume.pdf` to update the CV download.
 
 ## Preview Locally
 
-From this folder:
+Install Hugo Extended and a package manager first. Then run:
 
 ```bash
-python3 -m http.server 8000
+hugo server --disableFastRender
 ```
 
-Then open:
-
-```text
-http://localhost:8000
-```
+Open the local URL printed by Hugo, usually `http://localhost:1313/`.
 
 ## Publish Changes
 
-After editing:
+Build the Hugo site and copy the generated files to the GitHub Pages root:
 
 ```bash
-git add .
-git commit -m "Update website"
+hugo --minify
+rsync -av --exclude pagefind public/ ./
+```
+
+Then use targeted staging so unrelated old-file deletions do not get committed accidentally:
+
+```bash
+git status
+git add content data config assets static css js media publications publication_types tags uploads 404.html _headers _redirects backlinks.json index.html index.xml robots.txt sitemap.xml hugoblox.yaml go.mod go.sum package.json pnpm-lock.yaml .npmrc .gitignore EDITING.md
+git commit -m "Migrate site to HugoBlox"
 git push
 ```
 
-GitHub Pages will redeploy automatically.
+GitHub Pages can continue serving the root of the `main` branch. The HugoBlox source remains in `content/`, `data/`, `config/`, `assets/`, and `static/`; the generated live site is copied to the repository root.

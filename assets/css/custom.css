@@ -1,0 +1,30 @@
+/* Small site-specific adjustments on top of the HugoBlox Academic CV theme. */
+:root {
+  --hb-spacing-section: 4rem;
+}
+
+#bio.hbb-section {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+#bio .resume-biography {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+#focus.hbb-section,
+#research.hbb-section,
+#all-research.hbb-section,
+#computing.hbb-section,
+#teaching.hbb-section {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+@media (min-width: 1024px) {
+  #bio .resume-biography {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+}

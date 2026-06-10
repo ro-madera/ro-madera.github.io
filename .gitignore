@@ -1,3 +1,26 @@
 .DS_Store
+.DS_Store?
+._*
 .ftpconfig
 
+# Hugo build output and generated assets
+public/
+resources/
+.hugo_build.lock
+hugo_stats.json
+**/assets/jsconfig.json
+
+# Node/package-manager dependencies
+node_modules/
+package-lock.json
+
+# Local environment and logs
+.env
+.env.local
+.env.*.local
+*.log
+npm-debug.log*
+
+# Pagefind generated search index
+pagefind/
+static/pagefind/
