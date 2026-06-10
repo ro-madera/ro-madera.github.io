@@ -5,6 +5,8 @@ authors:
   - Chris Busch
 date: "2025-01-01"
 publication_types: ["article"]
+publication:
+  name: "under review"
 abstract: "Develops a statistic for valuing public insurance against idiosyncratic income risk through variance adjustments."
 summary: "A variance-adjustment statistic for valuing public insurance against income risk."
 tags:

@@ -2,8 +2,10 @@
 title: "The Nonlinear Consumption Response to Income Risk: The Role of Tail Changes and Durables"
 authors:
   - me
-date: "2024-01-01"
+date: "2026-02-10"
 publication_types: ["article"]
+publication:
+  name: "Review of Economic Dynamics, review & resubmit"
 abstract: "Studies how changes in the tails of income risk shape household consumption responses, including the role of durable goods."
 summary: "Income tail risk, durable spending, and nonlinear consumption responses."
 tags:
