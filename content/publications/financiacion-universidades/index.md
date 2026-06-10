@@ -6,7 +6,7 @@ authors:
   - Maia Guell
   - Analia Viola
 date: "2024-06-01"
-publication_types: ["article-journal"]
+publication_types: ["chapter"]
 publication:
   name: "Papeles de Economia Espanola"
 abstract: "Spanish-language policy chapter on university financing, sustainability, efficiency, and redistribution."

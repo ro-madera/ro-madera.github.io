@@ -243,20 +243,17 @@ nav, .navbar-brand, button, input, textarea, select {
 .dark .skill-label { color: #d1d5db; }
 
 /* ============================================================
-   Paper citation style:
-   Title (bold) → Authors (lighter, smaller) → Journal (italic)
+   Paper citation style (custom template: title → authors → journal+date → links)
    ============================================================ */
 .pub-list-item {
   display: flex !important;
   flex-direction: column !important;
   gap: 0.1rem !important;
-  font-size: 0 !important;   /* collapses bare text nodes (year, periods) */
 }
-.pub-list-item .pub-icon    { display: none !important; }
+.pub-list-item .pub-icon { display: none !important; }
 
-/* 1. Title: first, bold */
+/* Title: bold */
 .pub-list-item > a.underline {
-  order: 1 !important;
   display: block !important;
   font-size: 0.97rem !important;
   font-weight: 700 !important;
@@ -267,32 +264,36 @@ nav, .navbar-brand, button, input, textarea, select {
 .pub-list-item > a.underline:hover { text-decoration: underline !important; }
 .dark .pub-list-item > a.underline { color: #f9fafb !important; }
 
-/* 2. Authors: second, lighter, one size smaller */
+/* Authors: lighter, smaller */
 .pub-list-item .li-cite-author {
-  order: 2 !important;
   display: block !important;
   font-size: 0.8rem !important;
   color: #6b7280 !important;
   font-weight: 400 !important;
-  margin-top: 0.15rem !important;
+  margin-top: 0.1rem !important;
 }
 .pub-list-item .li-cite-author a { color: inherit !important; text-decoration: none !important; }
 .dark .pub-list-item .li-cite-author { color: #9ca3af !important; }
 
-/* 3. Journal: italic, journal name bold, same size as authors */
-.pub-list-item > em {
-  order: 3 !important;
+/* Journal + date: journal bold italic, date normal */
+.pub-list-item .pub-journal {
   display: block !important;
   font-size: 0.8rem !important;
-  font-style: italic !important;
-  font-weight: 700 !important;
   color: #4b5563 !important;
 }
-.dark .pub-list-item > em { color: #9ca3af !important; }
+.pub-list-item .pub-journal em { font-weight: 700 !important; font-style: italic !important; }
+.dark .pub-list-item .pub-journal { color: #9ca3af !important; }
 
-/* 4. Links */
+/* Working paper date (no journal) */
+.pub-list-item .li-year {
+  display: block !important;
+  font-size: 0.8rem !important;
+  color: #6b7280 !important;
+}
+.dark .pub-list-item .li-year { color: #9ca3af !important; }
+
+/* Links */
 .pub-list-item .flex.flex-wrap {
-  order: 4 !important;
   font-size: 0.75rem !important;
   margin-top: 0.35rem !important;
 }

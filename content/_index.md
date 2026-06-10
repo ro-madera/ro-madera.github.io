@@ -43,6 +43,7 @@ sections:
         folders:
           - publications
         publication_type: "article-journal"
+      count: 0
     design:
       view: citation
 
@@ -54,6 +55,19 @@ sections:
         folders:
           - publications
         publication_type: "article"
+      count: 0
+    design:
+      view: citation
+
+  - block: collection
+    id: policy
+    content:
+      title: Book Chapters and Policy Writing
+      filters:
+        folders:
+          - publications
+        publication_type: "chapter"
+      count: 0
     design:
       view: citation
 
