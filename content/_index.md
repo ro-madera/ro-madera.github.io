@@ -36,27 +36,44 @@ sections:
   #     columns: '1'
 
   - block: collection
-    id: research
+    id: publications
     content:
-      title: Selected Research
-      text: 'Publications, working papers, and policy-relevant research projects.'
+      title: Publications
       filters:
         folders:
           - publications
-        featured_only: true
+        publication_type: "article-journal"
     design:
       view: citation
 
   - block: collection
-    id: all-research
+    id: working-papers
     content:
-      title: Publications and Working Papers
+      title: Working Papers
       filters:
         folders:
           - publications
-        exclude_featured: false
+        publication_type: "article"
     design:
       view: citation
+
+  - block: markdown
+    id: wip
+    content:
+      title: Work in Progress
+      text: |-
+        1. Project title (in preparation)
+        2. Project title (in preparation)
+        3. Project title (in preparation)
+        4. Project title (in preparation)
+        5. Project title (in preparation)
+        6. Project title (in preparation)
+        7. Project title (in preparation)
+        8. Project title (in preparation)
+        9. Project title (in preparation)
+        10. Project title (in preparation)
+    design:
+      columns: '1'
 
   - block: markdown
     id: computing

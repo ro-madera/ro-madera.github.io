@@ -6,7 +6,7 @@ authors:
   - Maia Guell
   - Analia Viola
 date: "2024-11-01"
-publication_types: ["chapter"]
+publication_types: ["article-journal"]
 publication:
   name: "Funcas Social and Economic Studies"
 abstract: "A policy chapter on higher-education financing, sustainability, efficiency, and redistribution."
