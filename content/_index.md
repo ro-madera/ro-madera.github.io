@@ -67,6 +67,20 @@ sections:
         folders:
           - publications
         publication_type: "chapter"
+        featured_only: true
+      count: 0
+    design:
+      view: citation
+
+  - block: collection
+    id: policy-es
+    content:
+      title: "In Spanish"
+      filters:
+        folders:
+          - publications
+        publication_type: "chapter"
+        exclude_featured: true
       count: 0
     design:
       view: citation

@@ -15,7 +15,7 @@ tags:
   - education finance
   - redistribution
   - policy design
-featured: false
+featured: true
 peer_reviewed: false
 open_access: true
 links:

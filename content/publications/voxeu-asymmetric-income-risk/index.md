@@ -10,7 +10,7 @@ publication_types: ["chapter"]
 publication:
   name: "VoxEU/CEPR"
 summary: "VoxEU column on asymmetric business-cycle earnings risk and the role of social insurance."
-featured: false
+featured: true
 links:
   - type: custom
     label: VoxEU Column

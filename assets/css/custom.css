@@ -297,3 +297,26 @@ nav, .navbar-brand, button, input, textarea, select {
   font-size: 0.75rem !important;
   margin-top: 0.35rem !important;
 }
+
+/* "In Spanish" subsection: visually part of Policy, not a separate alternating section */
+#policy-es.hbb-section {
+  background-color: white !important;
+  padding-top: 0 !important;
+  margin-top: -1.5rem;
+}
+.dark #policy-es.hbb-section {
+  background-color: transparent !important;
+}
+/* Smaller, muted title for the "In Spanish" sub-header */
+#policy-es [class*="text-3xl"],
+#policy-es h1, #policy-es h2 {
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  color: #6b7280 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+}
+.dark #policy-es [class*="text-3xl"],
+.dark #policy-es h1, .dark #policy-es h2 {
+  color: #9ca3af !important;
+}
