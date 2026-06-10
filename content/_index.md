@@ -76,15 +76,19 @@ sections:
       columns: '1'
 
   - block: markdown
-    id: computing
+    id: skills
     content:
-      title: Computing and Data
-      text: |-
-        **Quantitative policy models.** Life-cycle models, income-risk processes, welfare statistics, and counterfactual policy evaluation.
-
-        **Micro-data and measurement.** Administrative and household panel data, income dynamics, spending data, matched records, and distributional risk.
-
-        **Reproducible workflows.** Stata, Matlab, Fortran, R, Git, numerical methods, simulation, and replication pipelines.
+      title: Skills
+      text: |
+        <div class="skills-bars">
+          <div class="skill-row"><span class="skill-name">Stata</span><div class="skill-track"><div class="skill-fill" style="width:100%"></div></div><span class="skill-pct">100%</span></div>
+          <div class="skill-row"><span class="skill-name">Matlab</span><div class="skill-track"><div class="skill-fill" style="width:100%"></div></div><span class="skill-pct">100%</span></div>
+          <div class="skill-row"><span class="skill-name">R</span><div class="skill-track"><div class="skill-fill" style="width:100%"></div></div><span class="skill-pct">100%</span></div>
+          <div class="skill-row"><span class="skill-name">Econometrics</span><div class="skill-track"><div class="skill-fill" style="width:100%"></div></div><span class="skill-pct">100%</span></div>
+          <div class="skill-row"><span class="skill-name">Fortran</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div><span class="skill-pct">80%</span></div>
+          <div class="skill-row"><span class="skill-name">Julia</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div><span class="skill-pct">80%</span></div>
+          <div class="skill-row"><span class="skill-name">Python</span><div class="skill-track"><div class="skill-fill" style="width:50%"></div></div><span class="skill-pct">50%</span></div>
+        </div>
     design:
       columns: '1'
 
