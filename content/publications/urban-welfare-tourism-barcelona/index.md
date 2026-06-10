@@ -8,7 +8,7 @@ authors:
   - Alberto Graziano
   - Judit Montoriol-Garriga
 date: "2026-03-26"
-publication_types: ["report"]
+publication_types: ["article"]
 abstract: "Uses spatial tools to study tourism, local prices, and welfare in Barcelona."
 summary: "Spatial data, tourism, local prices, and urban welfare in Barcelona."
 tags:
