@@ -3,8 +3,8 @@ slug: me
 is_owner: true
 
 name:
-  display: Rocio Madera
-  given: Rocio
+  display: Rocío Madera
+  given: Rocío
   family: Madera
   alternate: ''
   pronunciation: ''
@@ -13,7 +13,7 @@ name:
 role: Assistant Professor of Economics
 
 bio: |
-  I am an Assistant Professor in the Department of Economics at Southern Methodist University and a Research Affiliate of the CESifo Research Network. My research combines rich micro-data with quantitative macroeconomic and labor-market models to study income risk, consumption, policy design, and household welfare.
+  I am an Assistant Professor in the Department of Economics at Southern Methodist University and a CESifo Research Network Research Affiliate. My research combines rich micro-data with quantitative macroeconomic and labor-market models to study income risk, consumption, policy design, and household welfare. Download my CV [here](/uploads/madera_cv.pdf) to learn more about me and my work.
 
 affiliations:
   - name: Southern Methodist University
@@ -23,8 +23,8 @@ links:
   - icon: at-symbol
     url: mailto:romadera@smu.edu
     label: Email
-  - icon: brands/twitter
-    url: https://twitter.com/elpuntoderocio
+  - icon: brands/x
+    url: https://x.com/elpuntoderocio
     label: Twitter
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/rocio-madera-54b95b124
@@ -38,7 +38,8 @@ links:
 
 interests:
   - Macroeconomics with micro-data
-  - Income dynamics and consumption
+  - Income dynamics with uncertainty
+  - Consumption and saving
   - Labor markets and self-employment
   - Policy design and welfare
   - Family economics
