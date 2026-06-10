@@ -85,14 +85,17 @@ sections:
     design:
       view: citation
 
-  - block: markdown
+  - block: collection
     id: wip
     content:
       title: Ongoing Projects
-      text: |-
-        1. Project title (in preparation)
+      filters:
+        folders:
+          - publications
+        publication_type: "report"
+      count: 0
     design:
-      columns: '1'
+      view: citation
 
   - block: markdown
     id: skills
