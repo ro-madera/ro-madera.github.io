@@ -4,8 +4,8 @@ authors:
   - me
   - Antonio Cabrales
   - Maia Guell
-date: "2025-01-01"
-publication_types: ["article"]
+date: "2026-02-01"
+publication_types: ["report"]
 abstract: "Work in progress on early-career job instability and life-cycle income dynamics."
 summary: "Early-career job instability and life-cycle income dynamics."
 tags:
@@ -15,9 +15,7 @@ tags:
 featured: false
 peer_reviewed: false
 open_access: true
-links:
-  - type: pdf
-    url: /papers/jmp_draft.pdf
+links: false
 projects: []
 slides: ""
 ---

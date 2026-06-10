@@ -7,7 +7,7 @@ authors:
   - Sharat Ganapati
   - Alberto Graziano
   - Judit Montoriol-Garriga
-date: "2020-02-03"
+date: "2026-03-26"
 publication_types: ["report"]
 abstract: "Uses spatial tools to study tourism, local prices, and welfare in Barcelona."
 summary: "Spatial data, tourism, local prices, and urban welfare in Barcelona."
