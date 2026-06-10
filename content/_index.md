@@ -10,7 +10,7 @@ sections:
     content:
       username: me
       text: |
-        I am an Assistant Professor of Economics at Southern Methodist University and a CESifo Research Network affiliate. I study how income uncertainty, labor-market frictions, and local economic conditions shape household consumption and family decisions, welfare, and the design of public policy.
+        I am an Assistant Professor of Economics at Southern Methodist University and a CESifo Research Network affiliate. I study how income uncertainty, labor-market frictions, and local economic conditions shape heterogeneous household consumption and family decisions, welfare, and the design of public policy.
       headings:
         about: ''
         education: Education
@@ -22,18 +22,18 @@ sections:
         size: xl
         shape: circle
 
-  - block: markdown
-    id: focus
-    content:
-      title: Research Focus
-      text: |-
-        My work is designed for questions where high-quality data and transparent quantitative models can improve institutional decision-making.
+  # - block: markdown
+  #   id: focus
+  #   content:
+  #     title: Research Focus
+  #     text: |-
+  #       My work is designed for questions where high-quality data and transparent quantitative models can improve institutional decision-making.
 
-        I combine administrative records, household panel data, consumption data, and spatial/platform data with life-cycle and macro-labor models. The goal is to measure risk, evaluate counterfactual policies, and make welfare trade-offs explicit for public agencies, research institutions, technology firms, and financial-sector policy teams.
+  #       I combine administrative records, household panel data, consumption data, and spatial/platform data with life-cycle and macro-labor models. The goal is to measure risk, evaluate counterfactual policies, and make welfare trade-offs explicit for public agencies, research institutions, technology firms, and financial-sector policy teams.
 
-        Current themes include income tail risk, consumption insurance, active labor-market policy, self-employment, tourism and urban welfare, and the spatial transmission of fiscal stimulus.
-    design:
-      columns: '1'
+  #       Current themes include income tail risk, consumption insurance, active labor-market policy, self-employment, tourism and urban welfare, and the spatial transmission of fiscal stimulus.
+  #   design:
+  #     columns: '1'
 
   - block: collection
     id: research
