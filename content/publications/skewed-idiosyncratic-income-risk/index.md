@@ -29,9 +29,6 @@ links:
     url: https://doi.org/10.1257/mac.20190019
   - type: code
     url: https://www.openicpsr.org/openicpsr/project/120905/version/V1/view
-  - type: custom
-    label: VoxEU
-    url: https://voxeu.org/article/asymmetric-business-cycle-risk-and-social-insurance
 projects: []
 slides: ""
 ---

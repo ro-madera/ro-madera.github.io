@@ -23,8 +23,11 @@ links:
   - type: slides
     url: /papers/BM_24_SAEe.pdf
   - type: custom
-    label: CEPR
+    label: CEPR DP
     url: https://cepr.org/publications/dp21129
+  - type: custom
+    label: CESifo WP
+    url: https://www.ifo.de/en/cesifo/publications/2026/working-paper/insurance-value-public-insurance-against-idiosyncratic-income-risk
 projects: []
 slides: ""
 ---

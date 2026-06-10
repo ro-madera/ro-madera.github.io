@@ -24,9 +24,6 @@ links:
   - type: custom
     label: DOI
     url: https://doi.org/10.1016/j.econlet.2025.112656
-  - type: custom
-    label: SSRN
-    url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5336240
 projects: []
 slides: ""
 ---
