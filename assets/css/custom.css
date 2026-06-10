@@ -29,22 +29,13 @@
   }
 }
 
-/* Download CV button: solid primary color, no effects */
-#bio .resume-biography a[href$=".pdf"].inline-flex {
-  background: var(--color-primary-600);
-  background-image: none;
-  box-shadow: none;
-  transition: none;
+/* Replace CV document icon with "CV" text */
+#bio a[title="CV"] svg {
+  display: none;
 }
-#bio .resume-biography a[href$=".pdf"].inline-flex:hover {
-  background: var(--color-primary-600);
-  background-image: none;
-  box-shadow: none;
-  transform: none;
-}
-.dark #bio .resume-biography a[href$=".pdf"].inline-flex {
-  background: var(--color-primary-400);
-}
-.dark #bio .resume-biography a[href$=".pdf"].inline-flex:hover {
-  background: var(--color-primary-400);
+#bio a[title="CV"]::after {
+  content: "CV";
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
 }
