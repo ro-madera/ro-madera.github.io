@@ -23,6 +23,9 @@ links:
   - icon: at-symbol
     url: mailto:romadera@smu.edu
     label: Email
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/rocio-madera-54b95b124
+    label: LinkedIn
   - icon: brands/github
     url: https://github.com/ro-madera
     label: GitHub
