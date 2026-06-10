@@ -62,7 +62,7 @@ sections:
   - block: collection
     id: policy
     content:
-      title: Book Chapters and Policy Writing
+      title: Book Chapters and Policy
       filters:
         folders:
           - publications

@@ -1,13 +1,13 @@
 ---
-title: "Income Dynamics of Couples: Correlated Risks and Heterogeneous Within-Household Insurance"
+title: "Individual Careers and Household Income Inequality"
 authors:
   - me
   - Chris Busch
   - Fane Groes
 date: "2025-01-01"
-publication_types: ["article"]
-abstract: "Work in progress on correlated income risks and heterogeneous within-household insurance."
-summary: "Correlated risks and within-household insurance."
+publication_types: ["report"]
+abstract: "Work in progress on the role of individual career choice and marriage sorting in accounting for household income inequality."
+summary: "Individual Careers and Household Income Inequality."
 tags:
   - family economics
   - household insurance
@@ -15,9 +15,7 @@ tags:
 featured: false
 peer_reviewed: false
 open_access: true
-links:
-  - type: slides
-    url: /papers/BMG_slides_dec24_fra.pdf
+links: false
 projects: []
 slides: ""
 ---
