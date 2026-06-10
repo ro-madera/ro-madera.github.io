@@ -53,17 +53,37 @@ nav, .navbar-brand, button, input, textarea, select {
 
 /* Ensure avatar is circular and larger */
 #bio .avatar-wrapper {
-  width: 270px !important;
-  height: 270px !important;
+  width: 310px !important;
+  height: 310px !important;
 }
 #bio .avatar-wrapper img,
 #bio .avatar {
-  width: 270px !important;
-  height: 270px !important;
+  width: 310px !important;
+  height: 310px !important;
   border-radius: 50% !important;
 }
 
-/* Education: discrete plain list — no cards, no icons, no shadows */
+/* Education and Research Fields side by side */
+#bio .resume-biography .mb-16 {
+  display: inline-flex !important;
+  flex-direction: column;
+  width: calc(48% - 0.5rem) !important;
+  vertical-align: top;
+  margin-bottom: 0 !important;
+}
+#bio .resume-biography .mb-16 + div {
+  display: inline-flex !important;
+  flex-direction: column;
+  width: calc(48% - 0.5rem) !important;
+  vertical-align: top;
+  margin-left: 2rem !important;
+}
+
+/* Research Fields tags: smaller */
+#bio .resume-biography .flex-wrap span {
+  font-size: 0.75rem !important;
+  padding: 0.2rem 0.65rem !important;
+}
 #bio .resume-biography .mb-16 .grid {
   gap: 0.25rem !important;
   display: block !important;
