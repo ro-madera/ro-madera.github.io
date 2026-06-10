@@ -3,7 +3,7 @@ title: "The Value of Public Insurance Against Idiosyncratic Income Risk: A Varia
 authors:
   - me
   - Chris Busch
-date: "2025-01-01"
+date: "2026-01-20"
 publication_types: ["article"]
 publication:
   name: "under review"
