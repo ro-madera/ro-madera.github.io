@@ -5,7 +5,7 @@ authors:
 date: "2026-02-10"
 publication_types: ["article"]
 publication:
-  name: "Review of Economic Dynamics, review & resubmit"
+  name: "Review of Economic Dynamics, revise & resubmit"
 abstract: "Studies how changes in the tails of income risk shape household consumption responses, including the role of durable goods."
 summary: "Income tail risk, durable spending, and nonlinear consumption responses."
 tags:

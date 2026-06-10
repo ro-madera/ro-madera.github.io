@@ -16,7 +16,7 @@
   </span>
 
   {{ if not $pub.is_empty }}
-  <span class="pub-journal">{{- $pub.display_short | markdownify -}}, {{ $month_year }}</span>
+  <span class="pub-journal"><span class="pub-journal-name">{{- $pub.display_short | markdownify -}}</span>, {{ $month_year }}</span>
   {{ else }}
   <span class="li-year">{{ $month_year }}</span>
   {{ end }}

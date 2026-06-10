@@ -252,11 +252,11 @@ nav, .navbar-brand, button, input, textarea, select {
 }
 .pub-list-item .pub-icon { display: none !important; }
 
-/* Title: bold */
+/* Title: regular weight */
 .pub-list-item > a.underline {
   display: block !important;
   font-size: 0.97rem !important;
-  font-weight: 700 !important;
+  font-weight: 400 !important;
   color: #111827 !important;
   text-decoration: none !important;
   line-height: 1.45 !important;
@@ -275,13 +275,17 @@ nav, .navbar-brand, button, input, textarea, select {
 .pub-list-item .li-cite-author a { color: inherit !important; text-decoration: none !important; }
 .dark .pub-list-item .li-cite-author { color: #9ca3af !important; }
 
-/* Journal + date: journal bold italic, date normal */
+/* Journal + date: journal/status bold white, date normal */
 .pub-list-item .pub-journal {
   display: block !important;
   font-size: 0.8rem !important;
   color: #4b5563 !important;
 }
-.pub-list-item .pub-journal em { font-weight: 700 !important; font-style: italic !important; }
+.pub-list-item .pub-journal-name {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+.pub-list-item .pub-journal-name em { font-weight: 700 !important; font-style: italic !important; }
 .dark .pub-list-item .pub-journal { color: #9ca3af !important; }
 
 /* Working paper date (no journal) */
