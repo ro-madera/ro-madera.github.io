@@ -19,9 +19,6 @@ open_access: true
 links:
   - type: pdf
     url: /papers/ConsumptionTailShocks_WP_2024.pdf
-  - type: custom
-    label: Status
-    url: "#"
 projects: []
 slides: ""
 ---
