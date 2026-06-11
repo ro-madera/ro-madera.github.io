@@ -254,6 +254,28 @@ nav, .navbar-brand, button, input, textarea, select {
 }
 .dark .skill-label { color: #d1d5db; }
 
+/* Ongoing Projects should use the same citation-list treatment as other research sections. */
+#wip .pub-list-item,
+#wip .wip-card {
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+#wip .wip-grid {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.75rem !important;
+}
+#wip .wip-card {
+  display: block !important;
+}
+#wip .wip-chart,
+#wip .wip-status,
+#wip .wip-meter {
+  display: none !important;
+}
+
 /* ============================================================
    Paper citation style (custom template: title → authors → journal+date → links)
    ============================================================ */
