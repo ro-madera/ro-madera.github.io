@@ -1,9 +1,9 @@
 ---
 title: "The Value of Public Insurance Against Idiosyncratic Income Risk: A Variance-Adjustment Statistic"
 authors:
-  - me
   - Chris Busch
-date: "2026-01-20"
+  - me
+date: "2026-04-02"
 publication_types: ["article"]
 publication:
   name: "under review"
@@ -11,8 +11,8 @@ abstract: "Develops a statistic for valuing public insurance against idiosyncrat
 summary: "A variance-adjustment statistic for valuing public insurance against income risk."
 tags:
   - public insurance
-  - welfare statistics
-  - policy evaluation
+  - welfare
+  - taxes and transfers
   - income risk
 featured: true
 peer_reviewed: false

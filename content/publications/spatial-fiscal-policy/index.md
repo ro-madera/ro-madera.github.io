@@ -1,9 +1,9 @@
 ---
 title: "Spatial Fiscal Policy: Stimulus Payments in a Consumption Network"
 authors:
-  - me
   - Simon Fuchs
   - Wookun Kim
+  - me
   - Hoyoung Yoo
 date: "2023-01-01"
 publication_types: ["report"]
@@ -13,6 +13,7 @@ tags:
   - fiscal policy
   - spatial data
   - consumption networks
+  - urban economics
 featured: false
 weight: 2
 peer_reviewed: false

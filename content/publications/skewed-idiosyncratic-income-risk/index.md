@@ -1,10 +1,10 @@
 ---
 title: "Skewed Idiosyncratic Income Risk over the Business Cycle: Sources and Insurance"
 authors:
-  - me
   - Chris Busch
   - David Domeij
   - Fatih Guvenen
+  - me
 date: "2022-04-01"
 publication_types: ["article-journal"]
 publication:

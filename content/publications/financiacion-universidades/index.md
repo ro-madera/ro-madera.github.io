@@ -1,9 +1,9 @@
 ---
 title: "La financiacion de las universidades: sostenibilidad, eficiencia y redistribucion"
 authors:
-  - me
   - Antonio Cabrales
   - Maia Guell
+  - me
   - Analia Viola
 date: "2024-06-01"
 publication_types: ["chapter"]
@@ -12,7 +12,7 @@ publication:
 abstract: "Spanish-language policy chapter on university financing, sustainability, efficiency, and redistribution."
 summary: "University financing, sustainability, efficiency, and redistribution."
 tags:
-  - education finance
+  - higher education
   - redistribution
   - Spain
 featured: false

@@ -1,9 +1,9 @@
 ---
 title: "Income Contingent University Loans: Policy Design and an Application to Spain"
 authors:
-  - me
   - Antonio Cabrales
   - Maia Guell
+  - me
   - Analia Viola
 date: "2019-07-01"
 publication_types: ["article-journal"]
@@ -14,8 +14,8 @@ publication:
 abstract: "Designs and evaluates income-contingent university loans, with an application to higher education financing in Spain."
 summary: "Income-contingent university loan design and redistribution in Spain."
 tags:
-  - credit design
-  - education finance
+  - credit markets
+  - higher education
   - redistribution
   - Spain
 featured: false

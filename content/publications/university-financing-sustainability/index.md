@@ -1,9 +1,9 @@
 ---
 title: "University financing: sustainability, efficiency and redistribution"
 authors:
-  - me
   - Antonio Cabrales
   - Maia Guell
+  - me
   - Analia Viola
 date: "2024-11-01"
 publication_types: ["chapter"]

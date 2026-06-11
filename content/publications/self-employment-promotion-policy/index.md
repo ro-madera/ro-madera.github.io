@@ -1,8 +1,8 @@
 ---
 title: "Self-Employment Promotion as Active Labor Market Policy: Design and Trade-offs in Rigid Labor Markets"
 authors:
-  - me
   - Joaquin Garcia-Cabo
+  - me
   - Zoe Xie
 date: "2025-12-01"
 publication_types: ["article-journal"]
@@ -11,9 +11,9 @@ publication:
 abstract: "Studies self-employment promotion as an active labor market policy and highlights the design trade-offs that arise in rigid labor markets."
 summary: "Design trade-offs in self-employment promotion as labor-market policy."
 tags:
-  - labor policy
+  - active labor policy
   - program design
-  - counterfactuals
+  - rigif labor markets
   - self-employment
 featured: true
 peer_reviewed: true

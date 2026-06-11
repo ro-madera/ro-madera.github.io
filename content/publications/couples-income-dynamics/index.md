@@ -1,9 +1,9 @@
 ---
 title: "Individual Careers and Household Income Inequality"
 authors:
-  - me
   - Chris Busch
   - Fane Groes
+  - me
 date: "2025-01-01"
 publication_types: ["report"]
 abstract: "Work in progress on the role of individual career choice and marriage sorting in accounting for household income inequality."
@@ -12,6 +12,7 @@ tags:
   - family economics
   - household insurance
   - income dynamics
+  - female labor force participation
 featured: false
 peer_reviewed: false
 open_access: true

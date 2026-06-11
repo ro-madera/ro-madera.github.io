@@ -1,8 +1,8 @@
 ---
 title: "Does Self-Employment Pay? The Role of Unemployment and Earnings Risk"
 authors:
-  - me
   - Joaquin Garcia-Cabo
+  - me
 date: "2024-04-01"
 publication_types: ["article-journal"]
 publication:
@@ -13,7 +13,7 @@ summary: "Returns to self-employment, unemployment exposure, and earnings risk."
 tags:
   - self-employment
   - unemployment risk
-  - labor markets
+  - rigid labor markets
 featured: false
 peer_reviewed: true
 open_access: true

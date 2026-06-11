@@ -1,11 +1,11 @@
 ---
 title: "Urban Welfare: Tourism in Barcelona"
 authors:
-  - me
   - Treb Allen
   - Simon Fuchs
   - Sharat Ganapati
   - Alberto Graziano
+  - me
   - Judit Montoriol-Garriga
 date: "2026-03-26"
 publication_types: ["article"]
@@ -14,8 +14,9 @@ summary: "Spatial data, tourism, local prices, and urban welfare in Barcelona."
 tags:
   - spatial data
   - tourism
-  - platform markets
+  - credit-card data
   - local welfare
+  - placed-based policy
 featured: true
 weight: 1
 peer_reviewed: false

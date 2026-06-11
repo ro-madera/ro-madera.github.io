@@ -1,8 +1,8 @@
 ---
 title: "Consumption Dynamics and Welfare Under Non-Gaussian Earnings Risk"
 authors:
-  - me
   - Fatih Guvenen
+  - me
   - Serdar Ozkan
 date: "2024-12-01"
 publication_types: ["article-journal"]
