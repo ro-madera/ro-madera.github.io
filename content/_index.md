@@ -59,81 +59,17 @@ sections:
     design:
       view: citation
 
-  # Previous WIP layout: restore this collection block to revert the card experiment.
-  # - block: collection
-  #   id: wip
-  #   content:
-  #     title: Ongoing Projects
-  #     filters:
-  #       folders:
-  #         - publications
-  #       publication_type: "report"
-  #     count: 0
-  #   design:
-  #     view: citation
-
-  - block: markdown
+  - block: collection
     id: wip
     content:
       title: Ongoing Projects
-      text: |-
-        <div class="wip-grid">
-          <article class="wip-card">
-            <div class="wip-chart" aria-hidden="true">
-              <svg viewBox="0 0 240 96" role="img">
-                <path class="wip-chart-grid" d="M24 18H224M24 44H224M24 70H224"/>
-                <path class="wip-chart-area" d="M24 68C58 62 76 47 104 50C134 53 148 36 176 32C198 29 210 24 224 21L224 82H24Z"/>
-                <path class="wip-chart-line" d="M24 68C58 62 76 47 104 50C134 53 148 36 176 32C198 29 210 24 224 21"/>
-                <circle cx="224" cy="21" r="4"/>
-              </svg>
-            </div>
-            <div class="wip-card-body">
-              <p class="wip-status">Drafting empirical sections</p>
-              <h3>Individual Careers and Household Income Inequality</h3>
-              <p>Work in progress on the role of individual career choice and marriage sorting in accounting for household income inequality.</p>
-              <div class="wip-meter" aria-label="Project status: 68 percent complete"><span style="width: 68%"></span></div>
-            </div>
-          </article>
-
-          <article class="wip-card">
-            <div class="wip-chart" aria-hidden="true">
-              <svg viewBox="0 0 240 96" role="img">
-                <path class="wip-chart-grid" d="M24 18H224M24 44H224M24 70H224"/>
-                <rect class="wip-bar wip-bar-a" x="38" y="50" width="24" height="32" rx="3"/>
-                <rect class="wip-bar wip-bar-b" x="82" y="34" width="24" height="48" rx="3"/>
-                <rect class="wip-bar wip-bar-c" x="126" y="42" width="24" height="40" rx="3"/>
-                <rect class="wip-bar wip-bar-d" x="170" y="25" width="24" height="57" rx="3"/>
-                <path class="wip-chart-line" d="M38 59C70 54 84 48 106 50C134 53 150 36 178 31C198 27 212 25 224 20"/>
-              </svg>
-            </div>
-            <div class="wip-card-body">
-              <p class="wip-status">Network measurement and counterfactuals</p>
-              <h3>Spatial Fiscal Policy: Stimulus Payments in a Consumption Network</h3>
-              <p>Studies spatial transmission of fiscal stimulus through consumption networks and local spending linkages.</p>
-              <div class="wip-meter" aria-label="Project status: 58 percent complete"><span style="width: 58%"></span></div>
-            </div>
-          </article>
-
-          <article class="wip-card">
-            <div class="wip-chart" aria-hidden="true">
-              <svg viewBox="0 0 240 96" role="img">
-                <path class="wip-chart-grid" d="M24 18H224M24 44H224M24 70H224"/>
-                <path class="wip-chart-area" d="M24 74C54 70 78 65 102 55C130 43 152 47 178 36C198 28 214 27 224 25L224 82H24Z"/>
-                <path class="wip-chart-line" d="M24 74C54 70 78 65 102 55C130 43 152 47 178 36C198 28 214 27 224 25"/>
-                <circle cx="102" cy="55" r="4"/>
-                <circle cx="178" cy="36" r="4"/>
-              </svg>
-            </div>
-            <div class="wip-card-body">
-              <p class="wip-status">Model calibration</p>
-              <h3>Early-Career Job Instability and Life-Cycle Income Dynamics</h3>
-              <p>Work in progress on early-career job instability, temporary contracts, and life-cycle income dynamics.</p>
-              <div class="wip-meter" aria-label="Project status: 46 percent complete"><span style="width: 46%"></span></div>
-            </div>
-          </article>
-        </div>
+      filters:
+        folders:
+          - publications
+        publication_type: "report"
+      count: 0
     design:
-      columns: '1'
+      view: citation
 
   - block: collection
     id: policy
