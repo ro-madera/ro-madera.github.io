@@ -286,8 +286,8 @@ nav, .navbar-brand, button, input, textarea, select {
 }
 .pub-list-item .pub-icon { display: none !important; }
 
-/* Title: bold */
-.pub-list-item > a.underline {
+/* Title: bold, not a link */
+.pub-list-item > .pub-title {
   display: block !important;
   font-size: 0.97rem !important;
   font-weight: 700 !important;
@@ -295,8 +295,7 @@ nav, .navbar-brand, button, input, textarea, select {
   text-decoration: none !important;
   line-height: 1.45 !important;
 }
-.pub-list-item > a.underline:hover { text-decoration: underline !important; }
-.dark .pub-list-item > a.underline { color: #f9fafb !important; }
+.dark .pub-list-item > .pub-title { color: #f9fafb !important; }
 
 /* Authors: lighter, smaller */
 .pub-list-item .li-cite-author {

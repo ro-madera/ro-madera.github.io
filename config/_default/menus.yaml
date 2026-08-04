@@ -25,9 +25,6 @@ main:
   - name: Policy
     url: /#policy
     weight: 30
-  - name: Skills
-    url: /#skills
-    weight: 40
   - name: Teaching
     url: /#teaching
     weight: 50
