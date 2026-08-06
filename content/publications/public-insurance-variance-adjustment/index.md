@@ -19,7 +19,7 @@ peer_reviewed: false
 open_access: true
 links:
   - type: pdf
-    url: /papers/BM_2025_WELFARE.pdf
+    url: /papers/BM_FINAL.pdf
   - type: slides
     url: /papers/BM_24_SAEe.pdf
   - type: custom
