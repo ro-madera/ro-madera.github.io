@@ -14,6 +14,25 @@ nav, .navbar-brand, button, input, textarea, select {
   font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif !important;
 }
 
+/* Desktop navigation: equal visible spacing between every top-level item.
+   Research + its dropdown arrow are treated as a single menu item. */
+@media (min-width: 1024px) {
+  #nav-menu {
+    column-gap: 2rem !important;
+  }
+  #nav-menu > .nav-item {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  #nav-menu > .nav-dropdown > .nav-link {
+    gap: 0.25rem !important;
+  }
+  #nav-menu > .nav-dropdown > .nav-link svg {
+    margin: 0 !important;
+    flex-shrink: 0 !important;
+  }
+}
+
 /* Left-align section title text */
 .hbb-section:not(#bio) h1,
 .hbb-section:not(#bio) h2,
