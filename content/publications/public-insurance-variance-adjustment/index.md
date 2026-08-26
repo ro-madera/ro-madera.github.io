@@ -15,6 +15,7 @@ tags:
   - taxes and transfers
   - income risk
 featured: true
+weight: 2
 peer_reviewed: false
 open_access: true
 links:

@@ -21,9 +21,7 @@ featured: true
 weight: 1
 peer_reviewed: false
 open_access: true
-links:
-  - type: pdf
-    url: /papers/AFGM_Barcelona_WP200203.pdf
+links: false
 projects: []
 slides: ""
 ---

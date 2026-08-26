@@ -36,18 +36,6 @@ sections:
   #     columns: '1'
 
   - block: collection
-    id: publications
-    content:
-      title: Publications
-      filters:
-        folders:
-          - publications
-        publication_type: "article-journal"
-      count: 0
-    design:
-      view: citation
-
-  - block: collection
     id: working-papers
     content:
       title: Working Papers
@@ -55,6 +43,20 @@ sections:
         folders:
           - publications
         publication_type: "article"
+      sort_by: "Weight"
+      sort_ascending: true
+      count: 0
+    design:
+      view: citation
+
+  - block: collection
+    id: publications
+    content:
+      title: Publications
+      filters:
+        folders:
+          - publications
+        publication_type: "article-journal"
       count: 0
     design:
       view: citation

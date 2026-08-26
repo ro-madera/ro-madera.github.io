@@ -14,6 +14,7 @@ tags:
   - spending data
   - consumption
 featured: true
+weight: 3
 peer_reviewed: false
 open_access: true
 links:
