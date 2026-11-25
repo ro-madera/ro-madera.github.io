@@ -1,5 +1,5 @@
 ---
-title: "Urban Welfare: Tourism in Barcelona"
+title: "Urban Welfare: Tourism in Barcelona (UPDATED NOVEMBER 2026)"
 authors:
   - Treb Allen
   - Simon Fuchs
